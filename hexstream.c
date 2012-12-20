@@ -53,15 +53,15 @@ parse:
             while (trash && garbage(remainder, argv[trash])) {
                 if ( (remainder = getchar()) != EOF ) continue;
             }
-    ﻿      e++;
-    ﻿      if ( (i = hexascii(quotient)) != z) {
-    ﻿          e++;
-    ﻿          if ( (r = hexascii(remainder)) != z) {
-    ﻿              i = (i * b + r); putchar(i); goto parse;
-    ﻿          } // 3
-    ﻿      } // 2  
-    ﻿  } // 1
-    } // 0
+			e++;
+			if ( (i = hexascii(quotient)) != z) {
+				e++;
+				if ( (r = hexascii(remainder)) != z) {
+					i = (i * b + r); putchar(i); goto parse;
+				} // 3
+			} // 2  
+		}
+	} // 0
     
     return e;
     
